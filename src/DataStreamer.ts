@@ -10,7 +10,8 @@ export interface ServerRespond {
 }
 
 class DataStreamer {
-  static API_URL: string = 'http://localhost:8080/query?id=1';
+  // Have to change the port to match the edited one of server.py
+  static API_URL: string = 'http://localhost:8082/query?id=1';
 
   static getData(callback: (data: ServerRespond[]) => void): void {
     const request = new XMLHttpRequest();
